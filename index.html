@@ -9,16 +9,26 @@
 <body>
     <div class="container">
         <h1>GeeksterMon</h1>
-        <div>
+        <div class="fltr">
             <label for="typeFilter">Filter by Type:</label>
             <select id="typeFilter">
                 <!-- Options will be populated dynamically using JavaScript -->
             </select>
             <button onclick="resetFilters()">Reset</button>
         </div>
-        <input type="text" id="searchInput" placeholder="Search by Name">
-        <button onclick="searchPokemon()">Search</button>
-        <div id="pokemonContainer" class="pokemon-container"></div>
+        <div class="btn">
+            <input type="text" id="searchInput" placeholder="Search by Name">
+            <button onclick="searchPokemon()">Search</button>
+        </div>
+       
+        <div id="pokemonContainer" class="pokemon-container">
+            <!-- <div class="flip">
+                <div class="inner">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+            </div> -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
